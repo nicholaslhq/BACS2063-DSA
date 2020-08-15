@@ -16,6 +16,8 @@ public class PlayTextAdventure {
     public static void main(String[] args){
         PlayTextAdventure game = new PlayTextAdventure();          
         game.startGame();
+        
+        //
     }
     
     public void startGame(){     
