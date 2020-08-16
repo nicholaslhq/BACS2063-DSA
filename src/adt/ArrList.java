@@ -38,7 +38,19 @@ public class ArrList<T> implements ItemInterface<T> {
       }
      return false;
     }
-    
+  
+public boolean replace(int givenPosition, T newEntry) {
+    boolean isSuccessful = true;
+
+    if ((givenPosition >= 1) && (givenPosition <= numberOfElement)) {
+      arrList[givenPosition - 1] = newEntry;
+    } else {
+      isSuccessful = false;
+    }
+
+    return isSuccessful;
+  }
+
   public boolean remove(T anElement)
   {
       boolean t = true;
